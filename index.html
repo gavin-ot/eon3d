@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>脊正医疗 | 脊柱侧弯矫正专家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- 顶部导航栏 -->
+    <header class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+        <h1 class="text-2xl font-bold text-blue-800">脊正医疗</h1>
+        <nav class="space-x-6 text-gray-600 hidden md:flex">
+          <a href="#about" class="hover:text-blue-600">关于我们</a>
+          <a href="#services" class="hover:text-blue-600">矫正服务</a>
+          <a href="#faq" class="hover:text-blue-600">常见问题</a>
+          <a href="#contact" class="hover:text-blue-600">联系我们</a>
+        </nav>
+        <a
+          href="#contact"
+          class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-sm"
+          >预约咨询</a
+        >
+      </div>
+    </header>
+
+    <!-- 英雄图轮播 -->
+    <section class="relative">
+      <div class="swiper h-[400px]">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://www.pantai.com.my/images/pantaihospitalmalaysialibraries/specialties/orthopaedics/scoliosis.jpg?sfvrsn=a927b04d_7"
+              class="w-full h-full object-cover"
+              alt="脊柱矫正"
+            />
+          </div>
+        </div>
+        <!-- 分页与箭头 -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div
+        class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-white text-center"
+      >
+        <h2 class="text-4xl font-bold mb-4">专注脊柱侧弯矫正</h2>
+        <p class="text-lg max-w-xl">
+          我们致力于提供专业、安全、个性化的矫正方案，帮助青少年和成人改善体态，提升生活质量。
+        </p>
+      </div>
+    </section>
+
+    <!-- 初始化 Swiper -->
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+
+    <!-- 服务介绍 -->
+    <section id="services" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <h3 class="text-3xl font-semibold text-center text-blue-800 mb-10">
+          我们的服务
+        </h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-blue-100 p-6 rounded-xl shadow">
+            <h4 class="text-xl font-bold mb-2">支具定制</h4>
+            <p>
+              根据每位患者的脊柱曲度和身体情况，量身定制高效舒适的矫正支具。
+            </p>
+          </div>
+          <div class="bg-blue-100 p-6 rounded-xl shadow">
+            <h4 class="text-xl font-bold mb-2">早期筛查</h4>
+            <p>开展脊柱侧弯早期检测，及早发现、及时干预，降低手术风险。</p>
+          </div>
+          <div class="bg-blue-100 p-6 rounded-xl shadow">
+            <h4 class="text-xl font-bold mb-2">康复指导</h4>
+            <p>专业康复团队提供个性化的锻炼指导，帮助患者巩固矫正成果。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 关于脊柱侧弯 -->
+    <section id="about" class="py-16 bg-gray-50">
+      <div class="max-w-5xl mx-auto px-4">
+        <h3 class="text-3xl font-semibold text-blue-800 mb-6">
+          什么是脊柱侧弯？
+        </h3>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          脊柱侧弯是一种脊椎的三维畸形，通常在青春期快速发育期间出现。轻度侧弯可能不易察觉，但如果不及时干预，可能会发展为严重弯曲，影响外观、呼吸功能甚至心理健康。通过科学评估和规范治疗，大多数患者可以避免手术，恢复正常生活。
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4">
+        <h3 class="text-3xl font-semibold text-center text-blue-800 mb-10">
+          常见问题
+        </h3>
+        <div class="space-y-6">
+          <div>
+            <h4 class="font-bold text-lg">佩戴支具会疼吗？</h4>
+            <p>初期可能会有轻微不适，医生会进行调试，确保舒适与效果兼顾。</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg">矫正需要多长时间？</h4>
+            <p>视个人病情而定，通常为半年至两年不等，定期复诊调整方案。</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg">成年人还可以矫正吗？</h4>
+            <p>可以。虽然治疗周期较长，但依然能改善体态、缓解不适。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="py-16 bg-blue-50">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-semibold text-blue-800 mb-4">联系我们</h3>
+        <p class="mb-6 text-gray-700">
+          欢迎预约咨询，我们的专业团队将为您提供最合适的矫正方案。
+        </p>
+        <p class="text-lg">📞 电话：400-123-4567</p>
+        <p class="text-lg">📍 地址：北京市朝阳区健康路100号</p>
+        <a
+          href="mailto:contact@jizheng.com"
+          class="mt-4 inline-block text-blue-600 underline"
+          >发送邮件</a
+        >
+      </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-white text-center py-4 text-sm text-gray-500">
+      &copy; 2025 脊正医疗 版权所有 | 京ICP备12345678号
+    </footer>
+  </body>
+</html>
