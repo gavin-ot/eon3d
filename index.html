@@ -10,6 +10,12 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <style>
+      .swiper-slide img {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+    </style>
   </head>
   <body class="font-sans text-gray-800">
     <!-- 顶部导航栏 -->
@@ -32,7 +38,7 @@
 
     <!-- 英雄图轮播 -->
     <section class="relative bg-blue-100">
-      <div class="swiper aspect-[6/1] w-full">
+      <div class="swiper w-full" style="height: 400px">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img
